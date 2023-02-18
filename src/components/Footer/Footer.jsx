@@ -49,7 +49,7 @@ const Footer = () => {
               </ListGroupItem>
 
               <ListGroupItem className="delivery__time-item border-0 ps-0">
-                <span>Email: example@gmail.com</span>
+                <span>Email: leducanh@gmail.com</span>
               </ListGroupItem>
             </ListGroup>
           </Col>
@@ -71,9 +71,9 @@ const Footer = () => {
           <Col lg='6' md='6'>
             <div className="social__links d-flex align-items-center justify-content-end gap-4">
                 <p className="m-0">Follow: </p>
-                <span><Link to='https://www.facebook.com/anhoct3010/'><i class="ri-facebook-line"></i></Link></span>
-                <span><Link to='https://github.com/devLda'><i class="ri-github-fill"></i></Link></span>
-                <span><Link to='https://www.linkedin.com/in/anh-le-duc-231265246/'><i class="ri-linkedin-line"></i></Link></span>
+                <span><a href='#'><i class="ri-facebook-line"></i></a></span>
+                <span><a href='https://github.com/devLda'><i class="ri-github-fill"></i></a></span>
+                <span><a href='https://www.linkedin.com/in/anh-le-duc-231265246/'><i class="ri-linkedin-line"></i></a></span>
             </div>
           </Col>
         </Row>

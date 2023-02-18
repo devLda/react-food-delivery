@@ -45,7 +45,7 @@ const Home = () => {
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi, excepturi ab commodi
+                  Quasi, exceptu
                 </p>
                 <div className="hero__btns mt-4">
                   <button className="order__btn d-flex align-items-center mb-4">
@@ -83,14 +83,14 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="pt-0">
+      <section className="pt-0 mt-4 mb-4">
         <Category />
       </section>
 
       <section>
         <Container>
           <Row>
-            <Col lg="12" className="text-center">
+            <Col lg="12" className="text-center mt-4">
               <h5 className="feature__subtitle mb-4">What we serve</h5>
               <h2 className="feature__title">Just sit back at home</h2>
               <h2 className="feature__title">
@@ -112,10 +112,10 @@ const Home = () => {
                   <img
                     src={item.imgUrl}
                     alt="feature-img"
-                    className="w-25 mb-3"
+                    className="w-50 mb-3"
                   />
                   <h5 className=" fw-bold mb-3">{item.title}</h5>
-                  <p>{item.desc}</p>
+                  <p className="feature__text">{item.desc}</p>
                 </div>
               </Col>
             ))}
