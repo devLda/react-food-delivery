@@ -122,6 +122,22 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center">
+              <h2>Popular Foods</h2>
+            </Col>
+            <Col lg='12'>
+              <div className="food__category">
+                <button className="all__btn">All</button>
+                <button><img src="" alt="" /></button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </Helmet>
   );
 };
