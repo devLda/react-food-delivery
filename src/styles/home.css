@@ -14,3 +14,86 @@
   .feature__item p {
     color: #777;
   }
+
+  
+.food__category {
+  background: #df2020;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0px;
+  border-radius: 8px;
+}
+
+.food__category button {
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  background: transparent;
+  color: #fff;
+}
+
+.food__category button img {
+  width: 20px;
+  height: 20px;
+}
+
+.foodBtnActive {
+  background: #fff !important;
+  border-radius: 5px;
+  color: #df2020 !important;
+}
+
+.food-order-title span {
+  color: #df2020;
+}
+
+.food-order-desc {
+  color: #777;
+  line-height: 28px;
+  margin-top: 48px; 
+}
+
+.why__choose-us{
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.why__choose-us p{
+  font-size: 1.1rem;
+  margin-right: 16px;
+}
+
+.why__food-order{
+  margin-top: 60px;
+}
+
+.choose__us-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.choose__us-title i {
+  font-weight: 500 !important;
+  color: #df2020;
+}
+
+.choose__us-desc {
+  color: #777;
+}
+
+.hot-pizza{
+  margin-top: 60px;
+}
+
+.testimonial__subtitle {
+  color: #df2020;
+}
+
+.testimonial__title span {
+  color: #df2020;
+}
+
+.testimonial__desc {
+  color: #777;
+  line-height: 30px;
+}

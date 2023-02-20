@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet.js";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import heroImg from "../assets/images/hero.png";
 import '../styles/hero-section.css'
 
@@ -11,6 +11,18 @@ import "../styles/home.css"
 import featureImg01 from "../assets/images/service-01.png";
 import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
+
+import products from '../assets/fake-data/products.js';
+
+import hamburgerCategory from '../assets/images/hamburger.png'
+import pizzaCategory from '../assets/images/pizza.png'
+import breadCategory from '../assets/images/bread.png'
+
+import ProductCard from '../components/UI/product-card/ProductCard.jsx';
+
+import whyImg from '../assets/images/location.png'
+
+import networkImg from '../assets/images/network.png'
 
 const featureData = [
   {
@@ -130,10 +142,120 @@ const Home = () => {
               <h2>Popular Foods</h2>
             </Col>
             <Col lg='12'>
-              <div className="food__category">
-                <button className="all__btn">All</button>
-                <button><img src="" alt="" /></button>
+              <div className="food__category d-flex align-items-center justify-content-center gap-5">
+                <button className="all__btn foodBtnActive">All</button>
+                <button
+                  className="d-flex align-items-center gap-2"
+                ><img src={hamburgerCategory} alt="" />Burger</button>
+                <button
+                  className="d-flex align-items-center gap-2"
+                ><img src={pizzaCategory} alt="" />Pizza</button>
+                <button
+                  className="d-flex align-items-center gap-2"
+                ><img src={breadCategory} alt="" />Bread</button>
               </div>
+            </Col>
+
+            {products.map((item) => (
+              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
+                <ProductCard item={item} />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+
+      <section >
+        <Container className="why__choose-us">
+          <Row>
+            <Col lg="6" md="6">
+              <img src={whyImg} alt="why-food-order" className="w-100" />
+            </Col>
+
+            <Col lg="6" md="6">
+              <div className="why__food-order">
+                <h2 className="food-order-title mb-4">
+                  Why <span>Food order?</span>
+                </h2>
+                <p className="food-order-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, minus. Tempora reprehenderit a corporis velit,
+                  laboriosam vitae ullam, repellat illo sequi odio esse iste
+                  fugiat dolor, optio incidunt eligendi deleniti!
+                </p>
+
+                <ListGroup className="mt-4">
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className=" choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Fresh and tasty
+                      foods
+                    </p>
+                    <p className="choose__us-desc">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quia, voluptatibus.
+                    </p>
+                  </ListGroupItem>
+
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Quality support
+                    </p>
+                    <p className="choose__us-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Qui, earum. Qui, earum?
+                    </p>
+                  </ListGroupItem>
+
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i>Order from any
+                      location{" "}
+                    </p>
+                    <p className="choose__us-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Qui, earum. Qui, earum?
+                    </p>
+                  </ListGroupItem>
+                </ListGroup>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className="hot-pizza pt-0">
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center mb-5 ">
+              <h2>Hot Pizza</h2>
+            </Col>
+
+            
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6" md="6">
+              <div className="testimonial ">
+                <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
+                <h2 className="testimonial__title mb-4">
+                  What our <span>customers</span> are saying
+                </h2>
+                <p className="testimonial__desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Distinctio quasi qui minus quos sit perspiciatis inventore
+                  quis provident placeat fugiat!
+                </p>
+
+                {/* <TestimonialSlider /> */}
+              </div>
+            </Col>
+
+            <Col lg="6" md="6">
+              <img src={networkImg} alt="testimonial-img" className="w-100" />
             </Col>
           </Row>
         </Container>
