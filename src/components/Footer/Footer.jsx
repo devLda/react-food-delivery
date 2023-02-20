@@ -3,7 +3,6 @@ import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import logo from "../../assets/images/res-logo.png";
 
 import "../../styles/footer.css";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -71,7 +70,7 @@ const Footer = () => {
           <Col lg='6' md='6'>
             <div className="social__links d-flex align-items-center justify-content-end gap-4">
                 <p className="m-0">Follow: </p>
-                <span><a href='#'><i class="ri-facebook-line"></i></a></span>
+                <span><a href='https://github.com/devLda'><i class="ri-facebook-line"></i></a></span>
                 <span><a href='https://github.com/devLda'><i class="ri-github-fill"></i></a></span>
                 <span><a href='https://www.linkedin.com/in/anh-le-duc-231265246/'><i class="ri-linkedin-line"></i></a></span>
             </div>
