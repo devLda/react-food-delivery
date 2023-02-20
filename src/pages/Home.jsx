@@ -24,6 +24,8 @@ import whyImg from '../assets/images/location.png'
 
 import networkImg from '../assets/images/network.png'
 
+import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
+
 const featureData = [
   {
     title: "Quick Delivery",
@@ -250,7 +252,7 @@ const Home = () => {
                   quis provident placeat fugiat!
                 </p>
 
-                {/* <TestimonialSlider /> */}
+                <TestimonialSlider />
               </div>
             </Col>
 
