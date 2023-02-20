@@ -168,9 +168,20 @@
     font-size: 0.8rem;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 480px) {
   .hero__content {
     text-align: center;
+    padding-top: 60px;
+  }
+
+  .hero__content h5{
+    margin-bottom: 8px!important;
+  }
+
+  h1.hero__title{
+    font-size: 1.3rem;
+    line-height: 32px;
+    margin-bottom: 4px!important;
   }
 
   .hero__btns {
@@ -183,8 +194,4 @@
   .why__choose-us {
     padding-top: 0 !important;
   }
-}
-
-@media only screen and (max-width: 768px) {
-    
 }
