@@ -51,7 +51,7 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col className="col-12">
+            <Col className="col-ssm-12">
               <div className="hero__content">
                 <h5 className="mb-3">Easy way to make an order</h5>
                 <h1 className="mb-4 hero__title">
@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col className="col-12">
+            <Col className="col-ssm-12">
               <div className="hero__img">
                 <img src={heroImg} alt="hero-img" />
               </div>

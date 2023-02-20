@@ -85,3 +85,54 @@
   .hero__img img{
     width: 110% !important;
   }
+
+  @media only screen and (max-width: 480px) {
+    .hero__content {
+      text-align: center;
+      padding-top: 60px;
+    }
+  
+    .hero__content h5{
+      margin-bottom: 8px!important;
+    }
+  
+    h1.hero__title{
+      font-size: 1.3rem;
+      line-height: 32px;
+      margin-bottom: 4px!important;
+    }
+
+    .hero__content > p{
+      font-size: 0.9rem!important;
+      margin-left: 20px;
+    }
+  
+    .hero__content .hero__btns {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0px!important;
+    }
+
+    button.all__foods-btn,
+    button.order__btn{
+        margin-left: 20px;
+        width: 40%;
+        height: 40px;
+        margin-bottom: 0!important;
+        font-size: 0.9rem!important;
+    }
+
+    button.all__foods-btn{
+      margin-top: 0!important;
+    }
+  
+    .hero__content .hero__service {
+      margin-top: 16px!important;
+      justify-content: center;
+    }
+
+    .shipping__icon i{
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }

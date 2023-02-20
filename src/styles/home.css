@@ -169,28 +169,49 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .hero__content {
-    text-align: center;
-    padding-top: 60px;
+  .col-ssm-12{
+    flex: 0 0 auto!important;
+    width: 100%!important;
   }
 
-  .hero__content h5{
-    margin-bottom: 8px!important;
+  .feature__text{
+    margin: 0 8px;
+    font-size: 0.9rem;
   }
 
-  h1.hero__title{
-    font-size: 1.3rem;
-    line-height: 32px;
-    margin-bottom: 4px!important;
+  .col-lg-12{
+    padding: 0!important;
   }
 
-  .hero__btns {
-    justify-content: center;
+  .col-lg-12 .food__category{
+    gap: 1rem!important;
+    border-radius: 0;
   }
 
-  .hero__service {
-    justify-content: center;
+  .food__category button{
+    padding: 12px 18px;
   }
+
+  .product__img img{
+     width: 80%!important;
+  }
+
+  .product__content .d-flex{
+    flex-direction: column;
+  }
+
+  .product__item{
+    padding: 16px 0!important;
+  }
+
+  .product__content h5{ 
+    margin-bottom: 12px!important;
+  }
+
+  .product__content h5 a{
+    font-size: 0.7rem!important;
+  }
+
   .why__choose-us {
     padding-top: 0 !important;
   }
