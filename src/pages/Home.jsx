@@ -55,7 +55,7 @@ const Home = () => {
   }
 
   const handleCategoryProducts = (category) => {
-    products.map(function (item) {
+    products.forEach((item) => {
       if(item.category.includes(category))
       {
         // console.log(item)
