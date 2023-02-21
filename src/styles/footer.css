@@ -97,7 +97,7 @@
     }
 
     .footer .container{
-        padding: 0 16px 12px;
+        padding: 0 20px;
     }
 
     .footer__logo img{
@@ -109,4 +109,8 @@
         font-size: .8rem;
         margin-bottom: 8px;
     }
+
+    .social__links{
+        padding-bottom: 12px;
+    } 
 }
