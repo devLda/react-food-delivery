@@ -158,6 +158,10 @@
     width: 40px;
   }
 
+  .logo h5{
+    font-size: .8rem;
+  }
+
   .cart__icon i,
   .user i,
   .mobile__menu i {
@@ -171,6 +175,12 @@
 
   .menu a:first-child {
     margin-top: 40px;
+  }
+
+  .menu a{
+    height: 48px;
+    line-height: 48px;
+    font-size: 1rem;
   }
 
 }
