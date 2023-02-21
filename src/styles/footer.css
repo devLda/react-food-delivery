@@ -86,3 +86,27 @@
     font-size: 0.8rem;
     color: #df2020;
 }
+
+@media only screen and (max-width: 480px) {
+    .footer{
+        padding: 0;
+    }
+
+    .logo.footer__logo{
+        margin: 16px 0;
+    }
+
+    .footer .container{
+        padding: 0 16px;
+    }
+
+    .footer__logo img{
+        width: calc(100% - 86%);
+        margin-bottom: 8px;
+    }
+
+    .footer__logo h5{
+        font-size: .8rem;
+        margin-bottom: 8px;
+    }
+}

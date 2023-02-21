@@ -166,9 +166,11 @@
 
   .menu {
     justify-content: start;
+    width: 200px;
   }
 
   .menu a:first-child {
     margin-top: 40px;
   }
+
 }

@@ -50,4 +50,12 @@
       font-size: 0.7rem;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .addToCart__btn{
+      margin-top: 8px;
+      padding: 12px 32px;
+    }
+  }
+
   
