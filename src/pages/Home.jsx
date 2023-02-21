@@ -74,10 +74,6 @@ const Home = () => {
       setProduct([])
       handleCategoryProducts(category);
     }
-
-    return () => {
-      
-    };
   }, [category]);
   
   // console.log(product)
