@@ -50,6 +50,9 @@ const Home = () => {
   const [product, setProduct] = useState([]);
   const [category, setCategory] = useState('All')
 
+  const [hotProduct, setHotproduct] = useState([])
+
+  // All product
   const handleAllProducts = () => {
     setProduct(products)
   }
@@ -75,8 +78,26 @@ const Home = () => {
       handleCategoryProducts(category);
     }
   }, [category]);
+
+  // Hot Product
+  const handleHotProduct = () => {
+    products.forEach((item) => {
+      if(item.hot === true)
+      {
+        console.log(item)
+        setHotproduct(pre => [...pre, item])
+      }
+    })
+  }
+
+  useEffect(() => {
+    handleHotProduct();
+    return () => {
+    }
+  }, [])
   
   // console.log(product)
+  console.log(hotProduct);
   return (
     <Helmet title="Home">
       <section>
@@ -274,14 +295,18 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="hot-pizza pt-0">
+      <section className="hot-pizza pt-0 mb-5">
         <Container>
           <Row>
-            <Col lg="12" className="text-center mb-5 ">
-              <h2>Hot Pizza</h2>
+            <Col lg="12" className="text-center ">
+              <h2>Hot Product</h2>
             </Col>
 
-            
+            {hotProduct.map((item,index) => (
+              <Col lg="3" md="4" sm="6" xs="6" key={index} className="mt-5">
+                <ProductCard item={item} />
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>

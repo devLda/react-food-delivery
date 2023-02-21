@@ -27,6 +27,7 @@ const products = [
   {
     id: "01",
     title: "Chicken Burger",
+    hot: true,
     price: 24.0,
     image01: product_01_image_01,
     image02: product_01_image_02,
@@ -39,6 +40,7 @@ const products = [
   {
     id: "02",
     title: "Vegetarian Pizza",
+    hot: true,
     price: 115.0,
     image01: product_02_image_01,
     image02: product_02_image_02,
@@ -51,6 +53,7 @@ const products = [
   {
     id: "03",
     title: "Double Cheese Margherita",
+    hot: false,
     price: 110.0,
     image01: product_03_image_01,
     image02: product_03_image_02,
@@ -63,6 +66,7 @@ const products = [
   {
     id: "04",
     title: "Maxican Green Wave",
+    hot: false,
     price: 110.0,
     image01: product_04_image_01,
     image02: product_04_image_02,
@@ -75,6 +79,7 @@ const products = [
   {
     id: "05",
     title: "Cheese Burger",
+    hot: true,
     price: 24.0,
     image01: product_05_image_01,
     image02: product_05_image_02,
@@ -86,6 +91,7 @@ const products = [
   {
     id: "06",
     title: "Royal Cheese Burger",
+    hot: false,
     price: 24.0,
     image01: product_01_image_01,
     image02: product_01_image_02,
@@ -98,6 +104,7 @@ const products = [
   {
     id: "07",
     title: "Seafood Pizza",
+    hot: true,
     price: 115.0,
     image01: product_02_image_02,
     image02: product_02_image_01,
@@ -110,6 +117,7 @@ const products = [
   {
     id: "08",
     title: "Thin Cheese Pizza",
+    hot: false,
     price: 110.0,
     image01: product_03_image_02,
     image02: product_03_image_01,
@@ -122,6 +130,7 @@ const products = [
   {
     id: "09",
     title: "Pizza With Mushroom",
+    hot: false,
     price: 110.0,
     image01: product_04_image_02,
     image02: product_04_image_01,
@@ -134,6 +143,7 @@ const products = [
   {
     id: "10",
     title: "Classic Hamburger",
+    hot: true,
     price: 24.0,
     image01: product_05_image_02,
     image02: product_05_image_01,
@@ -146,6 +156,7 @@ const products = [
   {
     id: "11",
     title: "Crunchy Bread ",
+    hot: false,
     price: 35.0,
     image01: product_06_image_01,
     image02: product_06_image_02,
@@ -158,6 +169,7 @@ const products = [
   {
     id: "12",
     title: "Delicious Bread ",
+    hot: true,
     price: 35.0,
     image01: product_06_image_02,
     image02: product_06_image_01,
@@ -170,11 +182,51 @@ const products = [
   {
     id: "13",
     title: "Loaf Bread ",
+    hot: false,
     price: 35.0,
     image01: product_06_image_03,
     image02: product_06_image_02,
     image03: product_06_image_03,
     category: "Bread",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+
+  {
+    id: "14",
+    title: "Thin Cheese Pizza",
+    hot: false,
+    price: 110.0,
+    image01: product_03_image_02,
+    image02: product_03_image_01,
+    image03: product_03_image_03,
+    category: "Pizza",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+  
+  {
+    id: "15",
+    title: "Crunchy Bread ",
+    hot: false,
+    price: 35.0,
+    image01: product_06_image_01,
+    image02: product_06_image_02,
+    image03: product_06_image_03,
+    category: "Bread",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+
+  {
+    id: "16",
+    title: "Seafood Pizza",
+    hot: true,
+    price: 120.0,
+    image01: product_02_image_02,
+    image02: product_02_image_01,
+    image03: product_02_image_03,
+    category: "Pizza",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
